@@ -1,6 +1,6 @@
-# Quicktext App Documentation
+# Scholl App Documentation
 ## Introduction  
-Quicktext™ is a channel manager of instant communications that combines SMS, instant messaging and live chat in the same interface connected to the PMS.
+Scholl™ is a .
 
 ## Documentation
 
@@ -18,8 +18,8 @@ This project hosts the documentation available at http://www.xxxxx.xx/.
 Clone the repository and install the dependencies
 
 ```sh
-$ git clone git@gitlab.satoripop.tn:quicktext/quicktext.git
-$ cd quicktext
+$ git clone git@github.com:AmaniSaid123/scholl.git
+$ cd scholl
 $ composer install
 $ php artisan key:generate
 
@@ -40,15 +40,3 @@ If you need help installing the project, please contact the .
 If you've instead found a bug  or would like new features added, go ahead and open issues or pull requests against this repo!
 #### NB : RUN 'php artisan laroute:generate' when ever the web.php (routes) file is updated
 
-
-## Version 3.0
-
-Run following sql:
-
-```sh
-UPDATE `im_message_meta` SET `date`=`date`*1000 WHERE `date`<10000000000
-UPDATE `im_archived_message_meta` SET `date`=`date`*1000 WHERE `date`<10000000000
-
-UPDATE `im_message_meta` SET `trigger`= 2 WHERE `trigger`= 0
-UPDATE `im_archived_message_meta` SET `trigger`= 2 WHERE `trigger`= 0
-```
